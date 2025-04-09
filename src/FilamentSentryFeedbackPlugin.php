@@ -1,15 +1,17 @@
 <?php
 
-namespace VendorName\Skeleton;
+declare(strict_types=1);
+
+namespace MartinPetricko\FilamentSentryFeedback;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;
 
-class SkeletonPlugin implements Plugin
+class FilamentSentryFeedbackPlugin implements Plugin
 {
     public function getId(): string
     {
-        return 'skeleton';
+        return 'filament-sentry-feedback';
     }
 
     public function register(Panel $panel): void
@@ -24,14 +26,15 @@ class SkeletonPlugin implements Plugin
 
     public static function make(): static
     {
-        return app(static::class);
+        /** @var static $instance */
+        $instance = app(static::class);
+        return $instance;
     }
 
     public static function get(): static
     {
         /** @var static $plugin */
-        $plugin = filament(app(static::class)->getId());
-
+        $plugin = filament(static::make()->getId());
         return $plugin;
     }
 }
