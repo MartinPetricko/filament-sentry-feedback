@@ -30,7 +30,7 @@ class FilamentSentryFeedbackServiceProvider extends PackageServiceProvider
     public function packageBooted(): void
     {
         FilamentAsset::register([
-            AlpineComponent::make('filament-sentry-feedback', __DIR__ . '/../resources/dist/components/filament-sentry-feedback.js'),
+            AlpineComponent::make('filament-sentry-feedback', __DIR__ . '/../resources/dist/filament-sentry-feedback.js'),
             Css::make('filament-sentry-feedback-styles', __DIR__ . '/../resources/dist/filament-sentry-feedback.css'),
         ], 'martinpetricko/filament-sentry-feedback');
     }

@@ -1,3 +1,5 @@
+[//]: # (TODO: UPDATE README)
+
 # This is my package filament-sentry-feedback
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/martinpetricko/filament-sentry-feedback.svg?style=flat-square)](https://packagist.org/packages/martinpetricko/filament-sentry-feedback)
@@ -17,23 +19,10 @@ You can install the package via composer:
 composer require martinpetricko/filament-sentry-feedback
 ```
 
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="filament-sentry-feedback-migrations"
-php artisan migrate
-```
-
 You can publish the config file with:
 
 ```bash
 php artisan vendor:publish --tag="filament-sentry-feedback-config"
-```
-
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="filament-sentry-feedback-views"
 ```
 
 This is the contents of the published config file:

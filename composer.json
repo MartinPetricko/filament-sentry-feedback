@@ -64,10 +64,7 @@
         "laravel": {
             "providers": [
                 "MartinPetricko\\FilamentSentryFeedback\\FilamentSentryFeedbackServiceProvider"
-            ],
-            "aliases": {
-                "FilamentSentryFeedback": "MartinPetricko\\FilamentSentryFeedback\\Facades\\FilamentSentryFeedback"
-            }
+            ]
         }
     },
     "minimum-stability": "dev",
