@@ -88,16 +88,21 @@ export default function initSentryFeedback({
 
             initSentry()
 
-            // Watch for dark mode toggle in SPA
-            new MutationObserver(() => {
-                if (colorScheme === 'auto') {
-                    document.getElementById(elementId).remove()
-                    initSentry()
-                }
-            }).observe(document.documentElement, {
-                attributes: true,
-                attributeFilter: ['class'],
-            })
+            if (colorScheme === 'auto') {
+                let previousDark = document.documentElement.classList.contains('dark')
+
+                new MutationObserver(() => {
+                    const currentDark = document.documentElement.classList.contains('dark')
+                    if (currentDark !== previousDark) {
+                        previousDark = currentDark
+                        document.getElementById(elementId)?.remove()
+                        initSentry()
+                    }
+                }).observe(document.documentElement, {
+                    attributes: true,
+                    attributeFilter: ['class'],
+                })
+            }
         },
     }
 }
