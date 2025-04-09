@@ -11,13 +11,11 @@ return [
     'widget' => [
         'element_id' => 'sentry-feedback',
         'color_scheme' => ColorScheme::Auto,
-        'show_branding' => true,
+        'show_branding' => false,
         'show_name' => true,
         'is_name_required' => false,
         'show_email' => true,
         'is_email_required' => true,
         'enable_screenshot' => true,
-
-        //TODO: text_customization
     ],
 ];
