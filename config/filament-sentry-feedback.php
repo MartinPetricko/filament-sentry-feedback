@@ -6,8 +6,14 @@ use MartinPetricko\FilamentSentryFeedback\Enums\ColorScheme;
 
 // config for MartinPetricko/FilamentSentryFeedback
 return [
+    /**
+     * https://docs.sentry.io/concepts/key-terms/dsn-explainer/#where-to-find-your-data-source-name-dsn
+     */
     'dsn' => env('SENTRY_LARAVEL_DSN', env('SENTRY_DSN')),
 
+    /**
+     * https://docs.sentry.io/platforms/javascript/user-feedback/configuration/
+     */
     'widget' => [
         'element_id' => 'sentry-feedback',
         'color_scheme' => ColorScheme::Auto,
