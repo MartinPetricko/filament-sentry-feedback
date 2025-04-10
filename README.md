@@ -58,7 +58,7 @@ Set your [Sentry DSN](https://docs.sentry.io/concepts/key-terms/dsn-explainer/#w
 SENTRY_LARAVEL_DSN=https://examplePublicKey@o0.ingest.sentry.io/0
 ```
 
-Register the plugin in your Filament panel::
+Register the plugin in your Filament panel:
 
 ```php
 ->plugins([
@@ -98,7 +98,7 @@ You can override the global config per panel:
 
 To customize the appearance of the feedback widget:
 1. [Create a custom theme](https://filamentphp.com/docs/3.x/panels/themes#creating-a-custom-theme) for your panel.
-2. Override the Sentry Feedback widget's [CSS variables](https://docs.sentry.io/concepts/key-terms/dsn-explainer/#where-to-find-your-data-source-name-dsn)
+2. Override the Sentry Feedback widget's [CSS variables](https://docs.sentry.io/platforms/javascript/user-feedback/configuration/#css-customization)
 
 ## Testing
 
