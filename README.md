@@ -2,7 +2,7 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/martinpetricko/filament-sentry-feedback.svg?style=flat-square)](https://packagist.org/packages/martinpetricko/filament-sentry-feedback)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/martinpetricko/filament-sentry-feedback/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/martinpetricko/filament-sentry-feedback/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/martinpetricko/filament-sentry-feedback/fix-php-code-styling.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/martinpetricko/filament-sentry-feedback/actions?query=workflow%3A"Fix+PHP+code+styling"+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/martinpetricko/filament-sentry-feedback/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/MartinPetricko/filament-sentry-feedback/actions?query=workflow%3A%22Fix+PHP+Code+Styling%22branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/martinpetricko/filament-sentry-feedback.svg?style=flat-square)](https://packagist.org/packages/martinpetricko/filament-sentry-feedback)
 
 Filament Sentry Feedback integrates the [Sentry User Feedback](https://sentry.io/for/user-feedback/) widget with [FilamentPHP](https://filamentphp.com/).
