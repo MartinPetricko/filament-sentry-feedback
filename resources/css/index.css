@@ -1,4 +1,4 @@
 @import '../../vendor/filament/filament/resources/css/theme.css';
 
-@source '../resources/views';
+@source '../views';
 @source '../../src/**/*.php';
