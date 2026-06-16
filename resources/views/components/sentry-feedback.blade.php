@@ -10,6 +10,7 @@
     x-load-src="{{ FilamentAsset::getAlpineComponentSrc('filament-sentry-feedback', 'martinpetricko/filament-sentry-feedback') }}"
     x-data="initSentryFeedback({
         dsn: @js($plugin->getDsn()),
+        environment: @js(app()->environment()),
         elementId: @js($plugin->getElementId()),
         colorScheme: @js($plugin->getColorScheme()),
         showBranding: @js($plugin->getShowBranding()),
