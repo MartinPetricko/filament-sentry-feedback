@@ -2,6 +2,7 @@ import * as Sentry from '@sentry/browser'
 
 export default function initSentryFeedback({
                                                dsn,
+                                               environment,
                                                elementId,
                                                showBranding,
                                                colorScheme,
@@ -48,6 +49,8 @@ export default function initSentryFeedback({
             const initSentry = () => {
                 Sentry.init({
                     dsn: dsn,
+                    environment: environment,
+                    defaultIntegrations: false,
                     integrations: [
                         Sentry.feedbackIntegration({
                             autoInject: false,
